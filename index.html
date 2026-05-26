@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistência Técnica DF</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        body{
+            background:#ffffff;
+            color:#0d1b2a;
+            overflow-x:hidden;
+        }
+        header{
+            background:linear-gradient(135deg,#0d1b2a,#0b3d91);
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+        header h1{
+            font-size:2.2rem;
+            animation:pulse 2s infinite;
+        }
+        header p{
+            margin-top:10px;
+            font-size:1.1rem;
+        }
+        .top-buttons{
+            margin-top:25px;
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+        .btn{
+            text-decoration:none;
+            padding:15px 28px;
+            border-radius:12px;
+            font-weight:bold;
+            transition:0.3s;
+            animation:float 3s ease-in-out infinite;
+        }
+        .btn:hover{
+            transform:scale(1.08);
+        }
+        .ligar{
+            background:#ff7b00;
+            color:white;
+        }
+        .whats{
+            background:#25D366;
+            color:white;
+        }
+        section{
+            padding:40px 20px;
+            max-width:1200px;
+            margin:auto;
+        }
+        .destaque{
+            background:#e8f5e9;
+            padding:25px;
+            border-radius:18px;
+            border-left:8px solid #25D366;
+            margin-bottom:35px;
+            animation:fade 2s infinite alternate;
+        }
+        .destaque h2{
+            color:#0b3d91;
+            margin-bottom:15px;
+        }
+        .images{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+        .card{
+            background:white;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 5px 20px rgba(0,0,0,0.15);
+            transition:0.4s;
+        }
+        .card:hover{
+            transform:translateY(-10px);
+        }
+        .card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+        }
+        .card h3{
+            padding:18px;
+            color:#0b3d91;
+            text-align:center;
+        }
+        .reviews{
+            background:#f7f7f7;
+            border-radius:18px;
+            padding:30px;
+            margin-top:40px;
+        }
+        .reviews h2{
+            text-align:center;
+            margin-bottom:25px;
+            color:#0b3d91;
+        }
+        .review{
+            background:white;
+            padding:18px;
+            border-radius:12px;
+            margin-bottom:18px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.08);
+        }
+        .stars{
+            color:#ffb400;
+            font-size:1.2rem;
+            margin-bottom:8px;
+        }
+        footer{
+            background:#0d1b2a;
+            color:white;
+            text-align:center;
+            padding:30px 20px;
+            margin-top:40px;
+        }
+        .fixed-buttons{
+            position:fixed;
+            right:15px;
+            bottom:15px;
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+            z-index:999;
+        }
+        .fixed-buttons a{
+            text-decoration:none;
+            color:white;
+            padding:14px 18px;
+            border-radius:50px;
+            font-weight:bold;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            animation:bounce 2s infinite;
+            text-align:center;
+        }
+        .call-fixed{
+            background:#ff7b00;
+        }
+        .zap-fixed{
+            background:#25D366;
+        }
+        @keyframes pulse{
+            0%{transform:scale(1);}
+            50%{transform:scale(1.04);}
+            100%{transform:scale(1);}
+        }
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-5px);}
+            100%{transform:translateY(0);}
+        }
+        @keyframes bounce{
+            0%,100%{transform:translateY(0);}
+            50%{transform:translateY(-6px);}
+        }
+        @keyframes fade{
+            from{opacity:0.9;}
+            to{opacity:1;}
+        }
+        @media(max-width:768px){
+            header h1{
+                font-size:1.7rem;
+            }
+            .card img{
+                height:220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assistência Técnica de Geladeiras, Máquinas de Lavar entre outros</h1>
+        <p>Atendimento rápido em todo o Distrito Federal</p>
+        <div class="top-buttons">
+            <a class="btn ligar" href="tel:61995119248">📞 Ligar Agora</a>
+            <a class="btn whats" href="https://wa.me/5561995119248" target="_blank">💬 WhatsApp</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="destaque">
+            <h2>Atendimento em Todo o DF</h2>
+            <p>Consertamos geladeiras, freezers, máquinas de lavar, secadoras, lava-louças, fornos, fogões e lava e seca com rapidez e qualidade. Atendimento residencial em todas as regiões do Distrito Federal.</p>
+            <br>
+            <strong>⚠ NÃO TRABALHAMOS COM VENDA DE PEÇAS</strong>
+        </div>
+
+        <div class="images">
+            <!-- 1. Geladeira -->
+            <div class="card">
+               
+                <h3>Conserto de Geladeira</h3>
+            </div>
+            
+            <!-- 2. Máquina de Lavar -->
+            <div class="card">
+                
+                <h3>Conserto de Máquina de Lavar</h3>
+            </div>
+            
+            <!-- 3. Lava-Louças -->
+            <div class="card">
+                
+                <h3>Conserto de Lava-Louças</h3>
+            </div>
+
+            <!-- 4. Lava e Seca -->
+            <div class="card">
+               
+                <h3>Conserto de Lava e Seca</h3>
+            </div>
+
+            <!-- 5. Freezer -->
+            <div class="card">
+                
+                <h3>Conserto de Freezer</h3>
+            </div>
+
+            <!-- 6. Forno -->
+            <div class="card">
+                
+                <h3>Conserto de Forno</h3>
+            </div>
+
+            <!-- 7. Fogão -->
+            <div class="card">
+               
+                <h3>Conserto de Fogão</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Avaliações dos Clientes</h2>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Chegou rápido e resolveu minha geladeira no mesmo dia.”</p>
+            <strong>— Carlos Henrique</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Ótimo atendimento e preço justo. Recomendo.”</p>
+            <strong>— Fernanda Alves</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Minha máquina de lavar funcionou perfeitamente.”</p>
+            <strong>— João Pedro</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Atendimento muito educado e serviço rápido.”</p>
+            <strong>— Mariana Souza</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Melhor assistência técnica que já contratei.”</p>
+            <strong>— Rafael Gomes</strong>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Assistência Técnica Especializada</h3>
+        <p>📍 Atendimento em todo o Distrito Federal</p>
+        <p style="margin-top:10px;">⚠ Não trabalhamos com venda de peças</p>
+        <p style="margin-top:15px;">📞 (61) 99511-9248</p>
+    </footer>
+
+    <div class="fixed-buttons">
+        <a class="call-fixed" href="tel:61995119248">📞 Ligar</a>
+        <a class="zap-fixed" href="https://wa.me/5561995119248" target="_blank">💬 WhatsApp</a>
+    </div>
+</body>
+</html>
+
+
